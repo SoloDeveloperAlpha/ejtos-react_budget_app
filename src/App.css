@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.currency{
+    width: max-content;
+    background-color: springgreen;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 151, 76);
+    cursor: pointer;
+    >span{
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >i{
+            font-size: 1.5em;
+        }
+    }
+    >ul{
+        width:100%;
+        margin: 0;
+        padding: 0;
+        >li{
+            width: 100%;
+            list-style: none;
+            padding: 0 10px;
+        }
+        >li:hover{
+            background-color: whitesmoke;
+        }
+        
+    }
+}

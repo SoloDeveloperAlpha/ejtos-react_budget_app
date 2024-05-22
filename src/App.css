@@ -38,6 +38,7 @@
 }
 
 .currency{
+    position: relative;
     width: max-content;
     background-color: springgreen;
     border-radius: 5px;
@@ -55,9 +56,13 @@
         }
     }
     >ul{
+        position: absolute;
         width:100%;
         margin: 0;
         padding: 0;
+        background-color: springgreen;
+        border: 1px solid rgb(0, 151, 76);
+        border-radius: 5px;
         >li{
             width: 100%;
             list-style: none;

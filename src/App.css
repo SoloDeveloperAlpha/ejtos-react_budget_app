@@ -37,40 +37,26 @@
   }
 }
 
-.currency{
-    position: relative;
-    width: max-content;
+.currency-container{
+  display: inline-block;
+  width: auto;
+  background-color: springgreen;
+  padding: 16px;
+  border-radius: 5px;
+  position: relative;
+  .currency{
     background-color: springgreen;
     border-radius: 5px;
-    border: 1px solid rgb(0, 151, 76);
+    border: none;
     cursor: pointer;
-    >span{
-        padding: 10px;
-        color: white;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        >i{
-            font-size: 1.5em;
-        }
+    user-select: none;
+    outline: none;
+    display: inline-block;
+    >option{
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      background-image: url('images/icons8-más-48.png');
     }
-    >ul{
-        position: absolute;
-        width:100%;
-        margin: 0;
-        padding: 0;
-        background-color: springgreen;
-        border: 1px solid rgb(0, 151, 76);
-        border-radius: 5px;
-        >li{
-            width: 100%;
-            list-style: none;
-            padding: 0 10px;
-        }
-        >li:hover{
-            background-color: whitesmoke;
-        }
-        
-    }
+}
 }
